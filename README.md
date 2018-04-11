@@ -3,7 +3,7 @@ I created Search Bar look like Google play store.
 Searched text via voice and type mode get toast.
 Now working on showing last searched work in SuggestionsAdapter
 
-Calling method in xml
+Calling method in xml<br/>
 <demo.com.app.GoogleSearchBar
                 android:id="@+id/mt_search"
                 android:layout_width="match_parent"
