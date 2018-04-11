@@ -5,11 +5,11 @@ Now working on showing last searched work in SuggestionsAdapter
 
 Calling method in xml
 <demo.com.app.GoogleSearchBar
-                android:id="@+id/mt_search"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp" />
-                
+                android:id="@+id/mt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+                
 In MainActivity.java
 Find view by following code 
 GoogleSearchBar searchBar = findViewById(R.id.mt_search);
