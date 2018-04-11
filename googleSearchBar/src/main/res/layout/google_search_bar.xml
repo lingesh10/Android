@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mt_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FFF"
+        app:cardBackgroundColor="#FFF"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mt_nav_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:contentDescription="@string/navicon"
+                    android:focusable="true"
+                    android:padding="12dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_dehaze_black_24dp" />
+
+                <RelativeLayout
+                    android:id="@+id/main_holder"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp">
+
+                    <TextView
+                        android:id="@+id/mt_text_place_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/google_play"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/mt_edit_text_place_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/action_search"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/mt_voice_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:contentDescription="@string/voice_icon"
+                    android:focusable="true"
+                    android:padding="12dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_keyboard_voice_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mt_suggestionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mt_suggestionList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</merge>
