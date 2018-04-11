@@ -9,7 +9,7 @@ Calling method in xml <br/>
                 android:layout_width="match_parent"  <br/>
                 android:layout_height="wrap_content"  <br/>
                 android:layout_margin="8dp" />  <br/>
-                
+                
 In MainActivity.java  <br/>
 Find view by following code  <br/> 
 GoogleSearchBar searchBar = findViewById(R.id.mt_search);  <br/>
